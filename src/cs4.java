@@ -5,6 +5,6 @@
  */
 
 
-public class cs3 {
-    int a ;
+public class cs4 {
+    String sdfsdf = "";
 }

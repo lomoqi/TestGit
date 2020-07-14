@@ -5,5 +5,5 @@
  */
 
 
-public class cs1 {
+public interface cs6 {
 }
