@@ -1,0 +1,57 @@
+1.练习：创建一个学生表student有学号id 姓名name 语文chinese 数学math 英语english 
+	create table student (id int,name varchar(10),chines int,math int,english int);
+
+2.练习：	创建2个数据库分别是 mydb1和mydb2 在第一个数据库里面创建员工表emp 里面有姓名name年龄age工资sal字段，在mydb2里面创建英雄表hero，字段有名字name 年龄age 英雄类型type 字符串类型 并且指定此表的引擎为myisam 字符集为gbk 
+	create database mydb1;
+	create database mydb2;
+	use mydb1;
+	create table emp(name varchar(10),age int,sal int);
+	use mydb2;
+	create table hero(name varchar(10),age int,type varchar(10)) engine=myisam charset=gbk;
+
+3.创建数据库mydb3 指定字符集utf8 并使用
+	create database mydb3p charset=utf8;
+
+4.创建temp表 只有id字段 指定引擎为myisam 字符集为gbk
+	use mydb3;
+	create table temp(id int) engine=myisam charset=gbk;
+
+5.修改表名为emp 
+	rename table temp to emp;
+
+6.修改引擎为innodb 修改字符集为utf8 
+	alter table emp engine=innodb charset=utf8;
+
+7.在最后面添加name字段
+	alter tabl emp add name varchar(10);
+
+8.在name前面添加age字段
+	alter table emp add age int after id;
+
+9.在age后面添加工资sal字段
+	alter table emp add sal int after name;
+
+10.修改sal字段名称为salary
+	alter table emp change sal salary int;
+
+11.修改age字段到最后面
+	alter table emp modify age int after name;
+
+12.删除salary字段
+	alter table emp drop salary;
+
+13.删除表
+	drop rable emp;
+
+14.删除数据库mydb3
+	drop databasee mydb3;
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
